@@ -1,0 +1,1499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Life Line Pet Clinic Dewas - Premium 24/7 Veterinary Services for Dogs, Cats, Parrots, Rabbits & Tortoises. Emergency care available. Call 094066 61856">
+    <meta name="keywords" content="Life Line Pet Clinic, Dewas, Veterinary, Animal Hospital, Emergency, 24 Hours, Dogs, Cats, Birds, Rabbits, Tortoises, Pet Care">
+    <title>Life Line Pet Clinic Dewas | Premium 24/7 Veterinary Care</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        :root {
+            --primary: #1a6d9b;
+            --secondary: #2d9a6e;
+            --accent: #f39c12;
+            --dark: #2c3e50;
+            --light: #ecf0f1;
+            --danger: #e74c3c;
+            --success: #27ae60;
+            --gray: #95a5a6;
+            --light-gray: #f5f7fa;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background-color: #fff;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            line-height: 1.3;
+            color: var(--dark);
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            font-size: 1.05rem;
+            box-shadow: 0 4px 15px rgba(26, 109, 155, 0.3);
+            letter-spacing: 0.5px;
+        }
+        
+        .btn:hover {
+            background: #155a85;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(26, 109, 155, 0.4);
+        }
+        
+        .btn-secondary {
+            background: var(--secondary);
+            box-shadow: 0 4px 15px rgba(45, 154, 110, 0.3);
+        }
+        
+        .btn-secondary:hover {
+            background: #25825a;
+            box-shadow: 0 8px 20px rgba(45, 154, 110, 0.4);
+        }
+        
+        .btn-accent {
+            background: var(--accent);
+            box-shadow: 0 4px 15px rgba(243, 156, 18, 0.3);
+        }
+        
+        .btn-accent:hover {
+            background: #d4880f;
+            box-shadow: 0 8px 20px rgba(243, 156, 18, 0.4);
+        }
+        
+        .section {
+            padding: 100px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 70px;
+        }
+        
+        .section-title h2 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--secondary);
+            border-radius: 2px;
+        }
+        
+        .section-title p {
+            font-size: 1.2rem;
+            color: var(--gray);
+            max-width: 750px;
+            margin: 35px auto 0;
+        }
+        
+        
+        
+        /* Header Styles */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-right: 15px;
+        }
+        
+        .logo-text h1 {
+            font-size: 1.9rem;
+            margin: 0;
+            color: var(--dark);
+        }
+        
+        .logo-text span {
+            color: var(--secondary);
+        }
+        
+        .logo-text p {
+            font-size: 0.85rem;
+            color: var(--gray);
+            margin: 0;
+            font-weight: 500;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 35px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            position: relative;
+            padding: 5px 0;
+        }
+        
+        nav ul li a:hover {
+            color: var(--primary);
+        }
+        
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: var(--secondary);
+            transition: width 0.3s;
+            border-radius: 2px;
+        }
+        
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+        
+        .mobile-toggle {
+            display: none;
+            font-size: 1.8rem;
+            cursor: pointer;
+            color: var(--dark);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(28, 40, 51, 0.85), rgba(28, 40, 51, 0.9)), url('https://images.unsplash.com/photo-1517423345487-603d8a5d2b3a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding-top: 80px;
+            position: relative;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
+            opacity: 0.1;
+        }
+        
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero h1 {
+            font-size: 3.8rem;
+            margin-bottom: 25px;
+            animation: fadeInDown 1s ease;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        .hero p {
+            font-size: 1.4rem;
+            margin-bottom: 40px;
+            animation: fadeInUp 1s ease;
+            text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+        }
+        
+        .hero-btns {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            animation: fadeIn 1.5s ease;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-top: 20px;
+            animation: pulse 2s infinite;
+        }
+        
+        /* About Section */
+        .about {
+            background: var(--light-gray);
+        }
+        
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            flex-wrap: wrap;
+        }
+        
+        .about-gallery {
+            flex: 1;
+            min-width: 300px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+        }
+        
+        .gallery-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            height: 250px;
+            position: relative;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .gallery-item:nth-child(1) {
+            grid-row: span 2;
+        }
+        
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .about-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 25px;
+        }
+        
+        .about-text p {
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+            color: #555;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 40px;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 25px 15px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .stat-item:hover {
+            transform: translateY(-10px);
+        }
+        
+        .stat-item i {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        .stat-item h3 {
+            font-size: 2rem;
+            color: var(--secondary);
+            margin-bottom: 5px;
+        }
+        
+        .stat-item p {
+            margin: 0;
+            color: var(--gray);
+            font-weight: 600;
+        }
+        
+        /* Services Section */
+        .services {
+            background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s ease;
+            position: relative;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .service-img {
+            height: 220px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .service-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .service-card:hover .service-img img {
+            transform: scale(1.1);
+        }
+        
+        .service-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(26, 109, 155, 0.85), transparent);
+            display: flex;
+            align-items: flex-end;
+            padding: 25px;
+        }
+        
+        .service-overlay h3 {
+            color: white;
+            font-size: 1.8rem;
+            margin: 0;
+        }
+        
+        .service-content {
+            padding: 30px;
+        }
+        
+        .service-content p {
+            color: #666;
+            margin-bottom: 25px;
+            font-size: 1.05rem;
+        }
+        
+        .service-features {
+            list-style: none;
+            margin-bottom: 25px;
+        }
+        
+        .service-features li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #eee;
+            display: flex;
+            align-items: center;
+        }
+        
+        .service-features li:last-child {
+            border-bottom: none;
+        }
+        
+        .service-features li i {
+            color: var(--secondary);
+            margin-right: 10px;
+            font-size: 1.1rem;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            background: linear-gradient(135deg, var(--primary), #2a7fb0);
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .testimonials::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
+            opacity: 0.05;
+        }
+        
+        .testimonials .section-title h2 {
+            color: white;
+        }
+        
+        .testimonials .section-title h2::after {
+            background: var(--accent);
+        }
+        
+        .testimonials .section-title p {
+            color: rgba(255, 255, 255, 0.85);
+        }
+        
+        .testimonial-slider {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 40px;
+            margin: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .testimonial-content {
+            font-size: 1.2rem;
+            font-style: italic;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        .testimonial-content::before,
+        .testimonial-content::after {
+            content: '"';
+            font-size: 4rem;
+            color: rgba(255, 255, 255, 0.2);
+            position: absolute;
+        }
+        
+        .testimonial-content::before {
+            top: -20px;
+            left: -20px;
+        }
+        
+        .testimonial-content::after {
+            bottom: -60px;
+            right: -20px;
+        }
+        
+        .client-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .client-img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 20px;
+            border: 3px solid var(--accent);
+        }
+        
+        .client-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .client-details h4 {
+            margin: 0 0 5px 0;
+            font-size: 1.3rem;
+        }
+        
+        .client-details p {
+            margin: 0;
+            color: var(--accent);
+            font-weight: 600;
+        }
+        
+        /* Gallery */
+        .gallery {
+            background: white;
+        }
+        
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        
+        .gallery-item-large {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            height: 300px;
+            position: relative;
+        }
+        
+        .gallery-item-large img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-item-large:hover img {
+            transform: scale(1.1);
+        }
+        
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(26, 109, 155, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+        
+        .gallery-item-large:hover .gallery-overlay {
+            opacity: 1;
+        }
+        
+        .gallery-overlay i {
+            color: white;
+            font-size: 3rem;
+        }
+        
+        /* Contact Section */
+        .contact {
+            background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+        }
+        
+        .contact-container {
+            display: flex;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+        
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .contact-info h3 {
+            font-size: 2rem;
+            margin-bottom: 35px;
+        }
+        
+        .info-item {
+            display: flex;
+            margin-bottom: 40px;
+        }
+        
+        .info-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 25px;
+            flex-shrink: 0;
+            box-shadow: 0 5px 15px rgba(26, 109, 155, 0.3);
+        }
+        
+        .info-icon i {
+            font-size: 1.8rem;
+            color: white;
+        }
+        
+        .info-text h4 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+        
+        .info-text p, .info-text a {
+            color: #666;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 1.1rem;
+        }
+        
+        .info-text a:hover {
+            color: var(--primary);
+        }
+        
+        .working-hours {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+        
+        .working-hours h4 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+        
+        .hours-list {
+            list-style: none;
+        }
+        
+        .hours-list li {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px dashed #eee;
+        }
+        
+        .hours-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .hours-list li span:first-child {
+            font-weight: 600;
+        }
+        
+        .hours-list li span:last-child {
+            color: var(--secondary);
+            font-weight: 600;
+        }
+        
+        .map {
+            flex: 1;
+            min-width: 300px;
+            height: 500px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .map iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        /* Emergency Section */
+        .emergency {
+            background: linear-gradient(135deg, var(--danger), #c0392b);
+            color: white;
+            text-align: center;
+            padding: 80px 0;
+            position: relative;
+        }
+        
+        .emergency::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
+            opacity: 0.1;
+        }
+        
+        .emergency-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .emergency h2 {
+            color: white;
+            font-size: 2.8rem;
+            margin-bottom: 25px;
+        }
+        
+        .emergency p {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+        
+        .emergency .btn {
+            background: white;
+            color: var(--danger);
+            font-weight: 700;
+            font-size: 1.2rem;
+            padding: 16px 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .emergency .btn:hover {
+            background: #f8f8f8;
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+        }
+        
+        .emergency-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 30px 0;
+            letter-spacing: 2px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 80px 0 40px;
+        }
+        
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 50px;
+            margin-bottom: 60px;
+        }
+        
+        .footer-col h3 {
+            color: var(--accent);
+            margin-bottom: 30px;
+            font-size: 1.7rem;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--secondary);
+        }
+        
+        .footer-col p {
+            color: #bbb;
+            margin-bottom: 25px;
+            line-height: 1.8;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 18px;
+        }
+        
+        .footer-links a {
+            color: #bbb;
+            text-decoration: none;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+        }
+        
+        .footer-links a i {
+            margin-right: 10px;
+            color: var(--accent);
+            font-size: 0.8rem;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent);
+            padding-left: 5px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 18px;
+            margin-top: 25px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            transition: all 0.4s ease;
+            font-size: 1.2rem;
+        }
+        
+        .social-links a:hover {
+            background: var(--primary);
+            transform: translateY(-5px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #999;
+            font-size: 1rem;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(243, 156, 18, 0.4);
+            }
+            70% {
+                transform: scale(1.02);
+                box-shadow: 0 0 0 15px rgba(243, 156, 18, 0);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(243, 156, 18, 0);
+            }
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .hero h1 {
+                font-size: 3.3rem;
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+            }
+            
+            .section {
+                padding: 80px 0;
+            }
+            
+            .section-title h2 {
+                font-size: 2.4rem;
+            }
+            
+            .stats {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-toggle {
+                display: block;
+            }
+            
+            nav ul {
+                position: fixed;
+                top: 90px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 90px);
+                background: white;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 40px;
+                transition: 0.4s;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            }
+            
+            nav ul.active {
+                left: 0;
+            }
+            
+            nav ul li {
+                margin: 20px 0;
+            }
+            
+            .hero h1 {
+                font-size: 2.4rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .hero-btns {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+            
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .about-gallery {
+                width: 100%;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-container {
+                flex-direction: column;
+            }
+            
+            .emergency h2 {
+                font-size: 2.2rem;
+            }
+            
+            .emergency p {
+                font-size: 1.1rem;
+            }
+            
+            .emergency-number {
+                font-size: 2rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .section {
+                padding: 60px 0;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .section-title p {
+                font-size: 1rem;
+            }
+            
+            .btn {
+                padding: 12px 25px;
+                font-size: 1rem;
+            }
+            
+            .testimonial-card {
+                padding: 30px 20px;
+            }
+            
+            .testimonial-content {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-paw"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Life <span>Line</span> Pet Clinic</h1>
+                        <p>Dewas Veterinary Services</p>
+                    </div>
+                </div>
+                <div class="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#emergency">Emergency</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Premium 24/7 Veterinary Care for Your Beloved Pets</h1>
+            <p>Specializing in Dogs, Cats, Parrots, Rabbits & Tortoises</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn">Book Appointment</a>
+                <a href="#services" class="btn btn-secondary">Our Services</a>
+            </div>
+            <div class="badge">
+                <i class="fas fa-ambulance"></i> Emergency Services Available 24/7
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Our Clinic</h2>
+                <p>Your trusted veterinary partner in Dewas for comprehensive pet care</p>
+            </div>
+            <div class="about-content">
+                <div class="about-gallery">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1587033598196-0d0b8e8b2e4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Veterinary Clinic">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1548802673-380ab8ebc7b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Cat Care">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1597848726155-3d9b7c4c9b50?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Rabbit Care">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h2>Your Trusted Veterinary Partner in Dewas</h2>
+                    <p>Life Line Pet Clinic in Dewas is dedicated to providing exceptional veterinary care for all your beloved pets. Our clinic specializes in treating dogs, cats, parrots, rabbits, and tortoises with compassion and expertise.</p>
+                    <p>With our 24-hour availability, your pets receive the care they need whenever they need it. Our experienced veterinarians are committed to the health and well-being of your furry and feathered family members.</p>
+                    <p>We understand that your pets are family, and we treat them with the same care and attention we would give to our own. Our state-of-the-art facility is equipped with modern diagnostic and treatment equipment to ensure the best possible care for your pets.</p>
+                    
+                    <div class="stats">
+                        <div class="stat-item">
+                            <i class="fas fa-user-md"></i>
+                            <h3>15+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-paw"></i>
+                            <h3>5000+</h3>
+                            <p>Happy Pets</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-stethoscope"></i>
+                            <h3>24/7</h3>
+                            <p>Emergency Care</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-award"></i>
+                            <h3>100%</h3>
+                            <p>Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Comprehensive Services</h2>
+                <p>Specialized veterinary care for all your pet's needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1587033598635-13ab3ff29c8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Dog Care">
+                        <div class="service-overlay">
+                            <h3>Dog Care</h3>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <p>Comprehensive veterinary services for your canine companions including vaccinations, checkups, and emergency care.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Routine Checkups & Vaccinations</li>
+                            <li><i class="fas fa-check-circle"></i> Surgical Procedures</li>
+                            <li><i class="fas fa-check-circle"></i> Dental Care</li>
+                            <li><i class="fas fa-check-circle"></i> Emergency Treatment</li>
+                            <li><i class="fas fa-check-circle"></i> Nutritional Counseling</li>
+                        </ul>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1548802673-380ab8ebc7b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Cat Care">
+                        <div class="service-overlay">
+                            <h3>Cat Care</h3>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <p>Specialized care for your feline friends with services ranging from routine checkups to complex medical treatments.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Preventive Care</li>
+                            <li><i class="fas fa-check-circle"></i> Internal Medicine</li>
+                            <li><i class="fas fa-check-circle"></i> Behavioral Counseling</li>
+                            <li><i class="fas fa-check-circle"></i> Geriatric Care</li>
+                            <li><i class="fas fa-check-circle"></i> Emergency Services</li>
+                        </ul>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1551085254-e96b210db58a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Bird Care">
+                        <div class="service-overlay">
+                            <h3>Bird Care</h3>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <p>Expert care for parrots and other pet birds including nutrition advice, health checkups, and habitat guidance.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Avian Nutrition</li>
+                            <li><i class="fas fa-check-circle"></i> Wing Clipping</li>
+                            <li><i class="fas fa-check-circle"></i> Beak & Nail Trimming</li>
+                            <li><i class="fas fa-check-circle"></i> Avian Medicine</li>
+                            <li><i class="fas fa-check-circle"></i> Habitat Design</li>
+                        </ul>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Clients Say</h2>
+                <p>Hear from pet owners who trust us with their beloved companions</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        Life Line Pet Clinic saved my dog's life during a critical emergency at 2 AM. The staff was incredibly professional and compassionate. I'm forever grateful for their 24/7 availability and expertise.
+                    </div>
+                    <div class="client-info">
+                        <div class="client-img">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Client">
+                        </div>
+                        <div class="client-details">
+                            <h4>Rajesh Sharma</h4>
+                            <p>Dewas Resident</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section gallery" id="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Clinic Gallery</h2>
+                <p>Take a look at our state-of-the-art facilities and happy pets</p>
+            </div>
+            <div class="gallery-container">
+                <div class="gallery-item-large">
+                    <img src="https://images.unsplash.com/photo-1587033598196-0d0b8e8b2e4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Clinic Interior">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item-large">
+                    <img src="https://images.unsplash.com/photo-1548802673-380ab8ebc7b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Surgery Room">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item-large">
+                    <img src="https://images.unsplash.com/photo-1597848726155-3d9b7c4c9b50?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Recovery Area">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item-large">
+                    <img src="https://images.unsplash.com/photo-1587033598635-13ab3ff29c8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Examination Room">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item-large">
+                    <img src="https://images.unsplash.com/photo-1551085254-e96b210db58a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Waiting Area">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item-large">
+                    <img src="https://images.unsplash.com/photo-1517423345487-603d8a5d2b3a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Pet Therapy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Section -->
+    <section class="emergency" id="emergency">
+        <div class="emergency-content">
+            <h2>24/7 Emergency Veterinary Care</h2>
+            <p>Our clinic is open around the clock for emergency veterinary services. If your pet needs immediate care, don't hesitate to contact us.</p>
+            <div class="emergency-number">📞 094066 61856</div>
+            <a href="tel:09406661856" class="btn">Call Now for Emergency Care</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Get in touch with our veterinary team</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Life Line Pet Clinic Dewas</h3>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Our Location</h4>
+                            <p>Bapna ke phele, Shiba Hotel Line, 23</p>
+                            <p>Near Saifee Furniture, Tarani Colony</p>
+                            <p>Agroha Nagar, Hate Singh Goyal Colony</p>
+                            <p>Dewas, Madhya Pradesh 455001</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Call Us</h4>
+                            <p>Phone: <a href="tel:09406661856">094066 61856</a></p>
+                            <p>Available 24/7 for emergencies</p>
+                        </div>
+                    </div>
+                    
+                    <div class="working-hours">
+                        <h4>Working Hours</h4>
+                        <ul class="hours-list">
+                            <li><span>Monday - Sunday</span> <span>24 Hours</span></li>
+                            <li><span>Emergency Services</span> <span>24/7</span></li>
+                            <li><span>Appointments</span> <span>9:00 AM - 10:00 PM</span></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14744.249499999999!2d76.0508823!3d22.9712749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMsKwNTgnMTcuMCJOIDc2wrAwMycwMy4yIkU!5e0!3m2!1sen!2sin!4v1650000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Life Line Pet Clinic</h3>
+                    <p>Providing exceptional veterinary care for dogs, cats, parrots, rabbits, and tortoises in Dewas since our establishment. Your pets' health and happiness are our top priorities.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="#gallery"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                        <li><a href="#emergency"><i class="fas fa-chevron-right"></i> Emergency</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Dog Care</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Cat Care</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Bird Care</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Small Animal Care</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Emergency Services</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Surgical Procedures</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Dewas, Madhya Pradesh</li>
+                        <li><i class="fas fa-phone"></i> 094066 61856</li>
+                        <li><i class="fas fa-envelope"></i> info@lifelinepetclinic.com</li>
+                        <li><i class="fas fa-clock"></i> Open 24 Hours</li>
+                        <li><i class="fas fa-globe"></i> www.lifelinepetclinic.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Life Line Pet Clinic Dewas. All Rights Reserved. | Designed with <i class="fas fa-heart" style="color: var(--danger);"></i> for your pets</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const navMenu = document.querySelector('nav ul');
+        
+        mobileToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('nav ul li a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 90,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Animation on scroll
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.service-card, .stat-item, .gallery-item-large');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+                
+                if (elementPosition < screenPosition) {
+                    element.style.opacity = 1;
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        };
+        
+        // Set initial state for animated elements
+        document.querySelectorAll('.service-card, .stat-item, .gallery-item-large').forEach(el => {
+            el.style.opacity = 0;
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        });
+        
+        window.addEventListener('scroll', animateOnScroll);
+        // Trigger once on load
+        window.addEventListener('load', animateOnScroll);
+    </script>
+</body>
+</html>
